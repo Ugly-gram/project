@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live Code Editor</title>
+    <link rel="stylesheet" href="busayo.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <h1>MY CODE EDITOR</h1>
+  
+  
+    <div class="editor">
+        <div class="left">
+            <label for="left">HTML <i class='bx bxl-html5 html'></i></label>
+            <textarea id="html-code" spellcheck="false" onkeyup="busayo()" placeholder="write your html code here"></textarea>
+
+            <label for="left">CSS <i class='bx bxl-css3 css'></i></label>
+            <textarea id="css-code" spellcheck="false" onkeyup="busayo()" placeholder="write your css here"></textarea>
+
+            <label for="left">JAVASCRIPT <i class='bx bxl-javascript js'></i></label>
+            <textarea id="js-code" spellcheck="false" onkeyup="busayo()" placeholder="write your javascript here"></textarea>
+        </div>
+        <div class="right">
+            <label ><i class='bx bxs-caret-right-square '></i>0UTPUT</label>
+            <iframe src=""  id="output" scrolling="no"></iframe>
+        </div>
+        
+    </div>
+ 
+  <script src="busayo.js"></script>
+</body>
+</html>
